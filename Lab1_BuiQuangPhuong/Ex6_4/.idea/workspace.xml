@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c845f58-647d-470e-9def-5591c50d11e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ex6_4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex6_3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex6_3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex6_5/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex6_5/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ex6_5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex6_5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First Java Program/src/Ex225.java" beforeDir="false" afterPath="$PROJECT_DIR$/../First Java Program/src/Ex225.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First Java Program/src/Ex226.java" beforeDir="false" afterPath="$PROJECT_DIR$/../First Java Program/src/Ex226.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First Java Program/src/ShowTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../First Java Program/src/ShowTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasics/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasics/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +19,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "F3ust"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/F3ust/IT3103.744527.2024.1.20235809.BuiQuangPhuong.git",
+    "accountId": "b0a1beb6-d945-4154-b7cc-f24f2cbd9438"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2mm3OUYbiZTEzdKuq0l0wtR7nHI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -36,6 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/IT3103.744527.2024.1.20235809.BuiQuangPhuong/Lab1_BuiQuangPhuong/Ex6_4",
     "onboarding.tips.debug.path": "D:/IT3103.744527.2024.1.20235809.BuiQuangPhuong/Lab1_BuiQuangPhuong/Ex6_4/src/Main.java"
   }
 }]]></component>
