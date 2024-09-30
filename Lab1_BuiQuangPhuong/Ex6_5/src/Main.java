@@ -17,6 +17,5 @@ public class Main {
         System.out.println("Sorted array: " + Arrays.toString(arr));
         System.out.println("Sum value: "+sum);
         System.out.println("Average value: " + (double)sum/n);
-
     }
 }
