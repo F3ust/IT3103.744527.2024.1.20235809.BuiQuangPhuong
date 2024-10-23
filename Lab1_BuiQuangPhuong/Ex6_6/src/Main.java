@@ -27,7 +27,7 @@ public class Main {
             }
         }
 
-        System.out.println("The sum of two matrices is: ");
+        System.out.println("The sum of two matrices i+s: ");
         for(int i = 0; i <= n-1; ++i) {
             for (int j = 0; j <= m-1; ++j) {
                 System.out.print(matrix_sum[i][j] + " ");
