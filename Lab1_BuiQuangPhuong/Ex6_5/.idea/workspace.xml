@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db958e0-2578-4e6a-b928-ea2e5bd0e402" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Ex6_3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex6_3/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex6_4/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex6_4/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex6_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex6_4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex6_4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex6_4/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../First Java Program/src/Ex225.java" beforeDir="false" afterPath="$PROJECT_DIR$/../First Java Program/src/Ex225.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../First Java Program/src/Ex226.java" beforeDir="false" afterPath="$PROJECT_DIR$/../First Java Program/src/Ex226.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../First Java Program/src/ShowTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../First Java Program/src/ShowTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasics/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasics/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2_BuiQuangPhuong/AIMS_project/src/DigitalVideoDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2_BuiQuangPhuong/AIMS_project/src/DigitalVideoDisc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,21 +15,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "F3ust"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;F3ust&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/F3ust/IT3103.744527.2024.1.20235809.BuiQuangPhuong.git",
-    "accountId": "b0a1beb6-d945-4154-b7cc-f24f2cbd9438"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/F3ust/IT3103.744527.2024.1.20235809.BuiQuangPhuong.git&quot;,
+    &quot;accountId&quot;: &quot;b0a1beb6-d945-4154-b7cc-f24f2cbd9438&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2mm7HiTbd05Suc2HSOZLVq68hXD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -47,7 +40,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/IT3103.744527.2024.1.20235809.BuiQuangPhuong/Lab1_BuiQuangPhuong/Ex6_6",
     "onboarding.tips.debug.path": "D:/IT3103.744527.2024.1.20235809.BuiQuangPhuong/Lab1_BuiQuangPhuong/Ex6_5/src/Main.java"
