@@ -1,1 +1,0 @@
-Java không cho phép thực hiện điều này vì phương thức khởi tạo với tham số title có kiểu dữ liệu String. Do đó, nếu ta tạo thêm một phương thức khởi tạo với tham số category cũng có kiểu String, Java sẽ không thể xác định được phương thức khởi tạo nào cần gọi khi sử dụng. Để sử dụng phương thức khởi tạo với tham số là category, ta cần chọn một kiểu dữ liệu khác thay vì String.
