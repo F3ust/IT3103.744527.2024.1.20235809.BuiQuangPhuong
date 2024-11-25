@@ -1,3 +1,5 @@
+package hust.soict.ite6.aims.media;
+
 public class DigitalVideoDisc {
     private String tile;
     private String category;

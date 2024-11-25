@@ -1,3 +1,9 @@
+package hust.soict.ite6.test.storeTest;
+
+import hust.soict.ite6.aims.cart.Cart;
+import hust.soict.ite6.aims.media.DigitalVideoDisc;
+import hust.soict.ite6.aims.store.Store;
+
 public class StoreTest {
     public static void main(String[] args){
         Cart cart = new Cart();
@@ -18,7 +24,7 @@ public class StoreTest {
 //        cart.removeDigitalVideoDisc(dvd3);
 //        System.out.println("Total cost: " + cart.totalCost() + " BachDT_20225600");
 //
-//        hust.soict.ite6.aims.media.DigitalVideoDisc[] dvdList = {dvd1, dvd2, dvd3, dvd4, dvd5};
+//        hust.soict.ite6.aims.media.hust.soict.ite6.aims.media.DigitalVideoDisc[] dvdList = {dvd1, dvd2, dvd3, dvd4, dvd5};
 //        cart.addDigitalVideoDisc(dvdList);
 //        //Test the print method
 //        cart.printCart();

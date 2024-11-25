@@ -1,3 +1,7 @@
+package hust.soict.ite6.aims.store;
+
+import hust.soict.ite6.aims.media.DigitalVideoDisc;
+
 public class Store {
     private int currentItemsNumber = 0;
     public static final int MAX_ITEMS_NUMBERED = 100;
@@ -7,7 +11,7 @@ public class Store {
     public void addDigitalVideoDisc(DigitalVideoDisc disc) {
         System.out.println();
         if(currentItemsNumber >= 98){
-            System.out.println("The hust.soict.ite6.aims.store.Store is almost full");
+            System.out.println("The hust.soict.ite6.aims.store.hust.soict.ite6.aims.store.Store is almost full");
         }
         if(currentItemsNumber < MAX_ITEMS_NUMBERED){
             itemsAvailable[currentItemsNumber] = disc;

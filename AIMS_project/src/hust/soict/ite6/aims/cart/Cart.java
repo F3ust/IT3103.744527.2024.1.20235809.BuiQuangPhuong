@@ -1,3 +1,7 @@
+package hust.soict.ite6.aims.cart;
+
+import hust.soict.ite6.aims.media.DigitalVideoDisc;
+
 //Bui Quang Phuong 20235809
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
@@ -32,7 +36,7 @@ public class Cart {
     }
     public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
         for (DigitalVideoDisc disc : dvdList) {
-            // Assuming Cart class handles this method to add DVDs
+            // Assuming hust.soict.ite6.aims.cart.Cart class handles this method to add DVDs
             if (qtyOrdered > MAX_NUMBERS_ORDERED) {
                 System.out.println("MAX NUMBERS ORDERED REACHED");
                 return;
