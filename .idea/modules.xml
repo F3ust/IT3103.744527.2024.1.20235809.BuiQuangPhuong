@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AIMS_project/AIMS_project.iml" filepath="$PROJECT_DIR$/AIMS_project/AIMS_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/Ex6_3/Ex6_3.iml" filepath="$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/Ex6_3/Ex6_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/Ex6_4/Ex6_4.iml" filepath="$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/Ex6_4/Ex6_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/Ex6_5/Ex6_5.iml" filepath="$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/Ex6_5/Ex6_5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/Ex6_6/Ex6_6.iml" filepath="$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/Ex6_6/Ex6_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/First Java Program/First Java Program.iml" filepath="$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/First Java Program/First Java Program.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IT3103.744527.2024.1.20235809.BuiQuangPhuong.iml" filepath="$PROJECT_DIR$/.idea/IT3103.744527.2024.1.20235809.BuiQuangPhuong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/JavaBasics/JavaBasics.iml" filepath="$PROJECT_DIR$/Other Project/Lab1_BuiQuangPhuong/JavaBasics/JavaBasics.iml" />
+    </modules>
+  </component>
+</project>
