@@ -1,3 +1,4 @@
+//Bui Quang Phuong 20235809
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
     private DigitalVideoDisc itemsOrdered[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
@@ -59,9 +60,12 @@ public class Cart {
     }
 
     public void showCart() {
-        for (int i = 0; i <= qtyOrdered-1; ++i) {
-            System.out.print(itemsOrdered[i].getTile() + " ");
-            System.out.println(itemsOrdered[i].getCost() + "$");
+        System.out.println("\n***********************CART***********************");
+        System.out.println("Ordered Items:");
+        for (int i = 0; i < this.qtyOrdered ; i++) {
+            System.out.println((i + 1) + ". " + this.itemsOrdered[i].toString());
         }
+        System.out.println("Total cost: " + totalCost() + " $");
+        System.out.println("**************************************************");
     }
 }
