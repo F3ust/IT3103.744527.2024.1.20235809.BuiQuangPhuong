@@ -122,6 +122,31 @@ public class Cart {
         return dvdTitle.contains(inputTitle);
     }
 
+    public void searchCategory(String userCategory) {
+        if (qtyOrdered == 0) {
+            System.out.println("The cart is empty.");
+            return;
+        }
+
+        boolean found = false;
+
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (isMatchCate(itemsOrdered[i].getCategory(), userCategory)) {
+                System.out.println(this.itemsOrdered[i].toString());
+                System.out.println("------------------------------------------");
+                found = true;
+            }
+        }
+
+        if (!found) {
+            System.out.println("No matching titles found for \"" + userCategory + "\".");
+        }
+    }
+    // Bui Quang Phuong 20235809
+    public boolean isMatchCate(String dvdCategory, String inputCategory) {
+        return dvdCategory.contains(inputCategory);
+    }
+
 }
 
 
