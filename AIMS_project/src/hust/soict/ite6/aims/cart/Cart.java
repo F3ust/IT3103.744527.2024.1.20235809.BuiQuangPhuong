@@ -12,6 +12,10 @@ public class Cart {
         this.qtyOrdered = qtyOrdered;
     }
 
+    public int getQtyOrdered() {
+        return qtyOrdered;
+    }
+
     public void addDigitalVideoDisc (DigitalVideoDisc disc){
         if (qtyOrdered > MAX_NUMBERS_ORDERED) {
             System.out.println("MAX NUMBERS ORDERED REACHED");
@@ -20,7 +24,7 @@ public class Cart {
         itemsOrdered[qtyOrdered] = disc;
         qtyOrdered += 1;
     }
-    public void addDigitalVideoDisc(DigitalVideoDisc disc1, DigitalVideoDisc disc2) {
+    public void addDigitalVideoDisc(DigitalVideoDisc disc1, DigitalVideoDisc disc2) { // Bui Quang Phuong 20235809
         if (qtyOrdered > MAX_NUMBERS_ORDERED) {
             System.out.println("MAX NUMBERS ORDERED REACHED");
             return;
@@ -34,7 +38,7 @@ public class Cart {
         itemsOrdered[qtyOrdered] = disc2;
         qtyOrdered += 1;
     }
-    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) { // Bui Quang Phuong 20235809
         for (DigitalVideoDisc disc : dvdList) {
             // Assuming hust.soict.ite6.aims.cart.Cart class handles this method to add DVDs
             if (qtyOrdered > MAX_NUMBERS_ORDERED) {

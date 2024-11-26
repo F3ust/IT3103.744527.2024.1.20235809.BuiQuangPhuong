@@ -11,15 +11,17 @@ public class TestPassingParameter {
 
 	    System.out.println("Persona title: "+ persona.getTitle()+"\n");
 	    System.out.println("Metaphor title: "+ metaphor.getTitle()+"\n");
-	    /*System.out.println("Sau khi goi change title\n");
+	    System.out.println("After change title\n");
 	    changeTitle(persona, metaphor.getTitle());
-        System.out.println("Persona title: "+ persona.getTitle()+"\n");*/
+        System.out.println("Persona title: "+ persona.getTitle()+"\n");
 
         System.out.println("After correct swap\n");
         correctSwap(persona, metaphor);
 
         System.out.println("Persona title: "+ persona.getTitle()+"\n");
         System.out.println("Metaphor title: "+ metaphor.getTitle()+"\n");
+        //Bui Quang Phuong 20235809
+        System.out.println("Bui Quang Phuong 20235809");
     }
     //correct swap
     public static void correctSwap(DigitalVideoDisc dvd1,DigitalVideoDisc dvd2) {

@@ -18,7 +18,7 @@ public class Aims {
 
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
         anOrder.addDigitalVideoDisc(dvd3);
-
+        // Bui Quang Phuong 20235809
         DigitalVideoDisc[] listDvd = new DigitalVideoDisc[3];
         listDvd[0] = new DigitalVideoDisc("Persona", "Animation", "Atlus", 92, 20.67f);
         listDvd[1] = new DigitalVideoDisc("86", "Animation", "b", 86, 16.86f);
@@ -32,6 +32,7 @@ public class Aims {
         // print total cost of the items in the cart
         System.out.println("Total Cost is: ");
         System.out.println(anOrder.totalCost() + "$");
+        System.out.println("Total items: " + anOrder.getQtyOrdered());
 
         // remove dvd2
         anOrder.removeDigitalVideoDisc(dvd2);
