@@ -20,5 +20,15 @@ public class CartTest {
         cart.addDigitalVideoDisc(dvdList);
         cart.showCart();
         System.out.println("Bui Quang Phuong 20235809");
+
+        // Test the search method
+        System.out.println("------------------------------------------Bui Quang Phuong 20235809");
+        cart.searchId(5);
+        System.out.println("------------------------------------------Bui Quang Phuong 20235809");
+        cart.searchTitle("jajaja");
+        System.out.println("------------------------------------------Bui Quang Phuong 20235809");
+        cart.searchTitle("Metaphor");
+        System.out.println("------------------------------------------Bui Quang Phuong 20235809");
+        cart.searchCategory("Animation");
     }
 }
