@@ -80,4 +80,7 @@ public class DigitalVideoDisc {
         this.director = director;
         this.cost = cost;
     }
+    public String toString(){
+        return String.format("DVD - %s - %s - %s -%d : %.2f $",title,category,director,length,cost);
+    }
 }
