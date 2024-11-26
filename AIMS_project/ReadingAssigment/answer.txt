@@ -1,1 +1,27 @@
+Lab 2:
 Java không cho phép thực hiện điều này vì phương thức khởi tạo với tham số title có kiểu dữ liệu String. Do đó, nếu ta tạo thêm một phương thức khởi tạo với tham số category cũng có kiểu String, Java sẽ không thể xác định được phương thức khởi tạo nào cần gọi khi sử dụng. Để sử dụng phương thức khởi tạo với tham số là category, ta cần chọn một kiểu dữ liệu khác thay vì String.
+
+Lab 3:
+
+Q: Is JAVA a Pass by Value or a Pass by Reference programming language? 
+
+A : First, we recall what is meant pass by value or pass by reference.
+●	Pass by value: The method parameter values are copied to another variable and then the copied object is passed to the method. That's why it's called pass by value 
+●	Pass by reference: An alias or reference to the actual parameter is passed to the method. That's why it's called pass by reference.
+In Java, when a variable is passed to the add() method, Java creates a copy of that variable. As a result, any changes made inside add() do not affect the original variable in the main() method. This is why changes are not reflected back to main().
+For non-primitive types, like objects, Java passes references by value. This means that Java creates a copy of the reference itself and passes it to the method, but both references point to the same memory location. If the method modifies the object's internal state, these changes will be visible to the caller since both references point to the same object. However, if the method assigns the reference to a new object or location, it does not affect the original reference in main(). Therefore, if the reference itself is reassigned, those changes are not reflected back in the calling method.
+In Java, when an object reference is passed to a method, you can modify the object's fields, and these changes will be reflected back in the caller because both references point to the same memory location.
+However, if you assign the reference to a new object inside the method, the original reference remains unchanged. This means changes to the new object are not reflected in the caller.
+Conclusion:    JAVA is strictly a pass-by-value language. When we pass an object to a method, we aren't passing the actual object (like we would in 'pass-by-reference') — instead, we're passing the reference value (memory address) of the object.
+
+Q: Try to add a method addDigitalVideoDisc which allows to pass an arbitrary number of arguments for dvd. Compare to an array parameter. What do you prefer in this case?
+
+A: I would prefer the arbitrary number of arguments for dvd because  in the array arguments method, the array size can not be as flexible as the arbitrary number method.
+
+Q: After the call of swap (metaphor, persona) why does the title of these two objects still remain?
+
+A: Because JAVA is always pass-by-value. Unfortunately, when we deal with variables holding objects we are really dealing with object-handles called references which is also passed-by-value as well.
+
+Q:After the call of changeTitle(persona, metaphor.getTitle()) why is the title of the persona changed?
+
+A: Because the object name was set inside of changeTitlte(). 
