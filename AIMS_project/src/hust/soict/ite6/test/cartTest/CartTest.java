@@ -9,7 +9,7 @@ public class CartTest {
         //Bui Quang Phuong 20235809
         // Test -
         Cart cart = new Cart();
-        DigitalVideoDisc dvd1 = new DigitalVideoDisc("Metaphor Refantazio", "Fantasy", "Atlus", 123, 59.99f);
+        DigitalVideoDisc dvd1 = new DigitalVideoDisc("Metaphor Refantazio", "Animation", "Atlus", 123, 59.99f);
         DigitalVideoDisc dvd2 = new DigitalVideoDisc("Warhammer 40K", "Sci-Fi", "Game workshop",117, 59.99f);
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Titanic", "Romance", "James Cameroon", 195, 19.99f);
         DigitalVideoDisc dvd4 = new DigitalVideoDisc("The Dark Knight", "Action", "Christopher Nolan", 152, 29.99f);
