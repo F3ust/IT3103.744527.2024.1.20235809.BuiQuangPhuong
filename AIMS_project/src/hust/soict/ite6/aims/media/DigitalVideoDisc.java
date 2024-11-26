@@ -31,6 +31,10 @@ public class DigitalVideoDisc {
         return cost;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public DigitalVideoDisc() {
 
     }
@@ -99,6 +103,6 @@ public class DigitalVideoDisc {
         this.id = nbDigitalVideoDisc;
     }
     public String toString(){
-        return String.format("DVD - %s - %s - %s -%d : %.2f $",title,category,director,length,cost);
+        return String.format("DVD - %s - %s - %s - %d min(s) : %.2f $",title,category,director,length,cost);
     }
 }
