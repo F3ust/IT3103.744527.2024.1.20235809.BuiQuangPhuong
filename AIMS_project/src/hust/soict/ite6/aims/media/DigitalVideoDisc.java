@@ -98,4 +98,7 @@ public class DigitalVideoDisc {
         ++nbDigitalVideoDisc;
         this.id = nbDigitalVideoDisc;
     }
+    public String toString(){
+        return String.format("DVD - %s - %s - %s -%d : %.2f $",title,category,director,length,cost);
+    }
 }
