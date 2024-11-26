@@ -76,4 +76,52 @@ public class Cart {
         System.out.println("Total cost: " + totalCost() + " $");
         System.out.println("**************************************************");
     }
+
+    public void searchId(int id) {
+        if (qtyOrdered == 0) {
+            System.out.println("The cart is empty.");
+            return;
+        }
+        // Bui Quang Phuong 20235809
+        boolean found = false;
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (id == itemsOrdered[i].getId()) {
+                System.out.println(this.itemsOrdered[i].toString());
+                System.out.println("------------------------------------------");
+                found = true;
+            }
+        }
+
+        if (!found) {
+            System.out.println("No matching titles found for \"" + id + "\".");
+        }
+    }
+    // Bui Quang Phuong 20235809
+    public void searchTitle(String userTitle) {
+        if (qtyOrdered == 0) {
+            System.out.println("The cart is empty.");
+            return;
+        }
+
+        boolean found = false;
+
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (isMatch(itemsOrdered[i].getTitle(), userTitle)) {
+                System.out.println(this.itemsOrdered[i].toString());
+                System.out.println("------------------------------------------");
+                found = true;
+            }
+        }
+
+        if (!found) {
+            System.out.println("No matching titles found for \"" + userTitle + "\".");
+        }
+    }
+    // Bui Quang Phuong 20235809
+    public boolean isMatch(String dvdTitle, String inputTitle) {
+        return dvdTitle.contains(inputTitle);
+    }
+
 }
+
+
