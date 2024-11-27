@@ -6,66 +6,19 @@ import java.util.Objects;
 
 // Bui Quang Phuong 20235809
 
-public class Book {
-    private int id;
-    private String title;
-    private String category;
-    private float cost;
+public class Book extends Media {
     private List<String> authors = new ArrayList<String>();
-    private static int nbBook = 0;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public float getCost() {
-        return cost;
-    }
-
-    public void setCost(float cost) {
-        this.cost = cost;
-    }
-
-    public List<String> getAuthors() {
-        return authors;
-    }
-
-    public void setAuthors(List<String> authors) {
+    public Book(String title, String category, float cost,List<String> authors) {
+        super(title, category, cost);
         this.authors = authors;
     }
 
-    public static void setNbBook (int nbBook) {
-        Book.nbBook= nbBook;
-    }
 
-    public Book(int id, List<String> authors, float cost, String category, String title) {
-        ++nbBook;
-        this.id = nbBook;
-        this.authors = authors;
-        this.cost = cost;
-        this.category = category;
-        this.title = title;
-    }
+    public Book(String title, String category, float cost) {
+        super(title, category, cost);
+
+
     public Book() {
 
     }
