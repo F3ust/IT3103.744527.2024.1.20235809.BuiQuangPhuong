@@ -17,11 +17,8 @@ public class Book extends Media {
 
     public Book(String title, String category, float cost) {
         super(title, category, cost);
-
-
-    public Book() {
-
     }
+
     public void addAuthor(String author) {
         for (String i : authors) {
             if (Objects.equals(i, author)) {

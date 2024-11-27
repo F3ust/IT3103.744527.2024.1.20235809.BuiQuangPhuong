@@ -1,6 +1,6 @@
 package hust.soict.ite6.aims.cart;
 
-import hust.soict.ite6.aims.media.DigitalVideoDisc;
+import hust.soict.ite6.aims.media.disc.DigitalVideoDisc;
 
 //Bui Quang Phuong 20235809
 public class Cart {

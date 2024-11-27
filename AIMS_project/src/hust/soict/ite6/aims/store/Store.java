@@ -1,6 +1,6 @@
 package hust.soict.ite6.aims.store;
 
-import hust.soict.ite6.aims.media.DigitalVideoDisc;
+import hust.soict.ite6.aims.media.disc.DigitalVideoDisc;
 
 public class Store {
     private int currentItemsNumber = 0;
