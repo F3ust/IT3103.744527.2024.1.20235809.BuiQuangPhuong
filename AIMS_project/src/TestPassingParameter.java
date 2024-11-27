@@ -1,4 +1,4 @@
-import hust.soict.ite6.aims.media.DigitalVideoDisc;
+import hust.soict.ite6.aims.media.disc.DigitalVideoDisc;
 
 public class TestPassingParameter {
 
