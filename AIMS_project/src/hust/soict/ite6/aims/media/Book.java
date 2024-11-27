@@ -12,6 +12,7 @@ public class Book {
     private String category;
     private float cost;
     private List<String> authors = new ArrayList<String>();
+    private static int nbBook = 0;
 
     public int getId() {
         return id;
@@ -53,8 +54,13 @@ public class Book {
         this.authors = authors;
     }
 
+    public static void setNbBook (int nbBook) {
+        Book.nbBook= nbBook;
+    }
+
     public Book(int id, List<String> authors, float cost, String category, String title) {
-        this.id = id;
+        ++nbBook;
+        this.id = nbBook;
         this.authors = authors;
         this.cost = cost;
         this.category = category;
