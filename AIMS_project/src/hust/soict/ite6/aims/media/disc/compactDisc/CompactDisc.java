@@ -16,6 +16,11 @@ public class CompactDisc extends Disc {
         return artist;
     }
 
+    public CompactDisc(String title, String category, float cost, String artist) {
+        super(title, category, cost);
+        this.artist = artist;
+    }
+
     public void addTrack(Track track) {
         for (Track i : tracks) {
             if (Objects.equals(i, track)) {

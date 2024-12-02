@@ -17,7 +17,7 @@ public class CartTest {
 
 
         DigitalVideoDisc[]  dvdList = {dvd1,dvd2, dvd3, dvd4, dvd5};
-        cart.addDigitalVideoDisc(dvdList);
+        cart.addMedia(dvdList);
         cart.showCart();
         System.out.println("Bui Quang Phuong 20235809");
 

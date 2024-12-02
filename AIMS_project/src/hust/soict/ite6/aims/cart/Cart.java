@@ -1,11 +1,14 @@
 package hust.soict.ite6.aims.cart;
 
-import hust.soict.ite6.aims.media.disc.DigitalVideoDisc;
+import hust.soict.ite6.aims.media.Media;
+
+import java.util.ArrayList;
+import java.util.Objects;
 
 //Bui Quang Phuong 20235809
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
-    private DigitalVideoDisc itemsOrdered[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
+    private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
     private int qtyOrdered;
 
     public void setQtyOrdered(int qtyOrdered) {
@@ -16,45 +19,48 @@ public class Cart {
         return qtyOrdered;
     }
 
-    public void addDigitalVideoDisc (DigitalVideoDisc disc){
+    public void addMedia (Media media){
         if (qtyOrdered > MAX_NUMBERS_ORDERED) {
             System.out.println("MAX NUMBERS ORDERED REACHED");
             return;
         }
-        itemsOrdered[qtyOrdered] = disc;
+        itemsOrdered.add(media);
+        System.out.println("Product " + media.getTitle() + " added successfully");
         qtyOrdered += 1;
     }
-    public void addDigitalVideoDisc(DigitalVideoDisc disc1, DigitalVideoDisc disc2) { // Bui Quang Phuong 20235809
+    public void addMedia(Media media1, Media media2) { // Bui Quang Phuong 20235809
         if (qtyOrdered > MAX_NUMBERS_ORDERED) {
             System.out.println("MAX NUMBERS ORDERED REACHED");
             return;
         }
-        itemsOrdered[qtyOrdered] = disc1;
+        itemsOrdered.add(media1);
+        System.out.println("Product " + media1.getTitle() + " added successfully");
         qtyOrdered += 1;
         if (qtyOrdered > MAX_NUMBERS_ORDERED) {
             System.out.println("MAX NUMBERS ORDERED REACHED");
             return;
         }
-        itemsOrdered[qtyOrdered] = disc2;
+        itemsOrdered.add(media2);
+        System.out.println("Product " + media2.getTitle() + " added successfully");
         qtyOrdered += 1;
     }
-    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) { // Bui Quang Phuong 20235809
-        for (DigitalVideoDisc disc : dvdList) {
+    public void addMedia(Media[] mediaList) { // Bui Quang Phuong 20235809
+        for (Media media : mediaList) {
             // Assuming hust.soict.ite6.aims.cart.Cart class handles this method to add DVDs
             if (qtyOrdered > MAX_NUMBERS_ORDERED) {
                 System.out.println("MAX NUMBERS ORDERED REACHED");
                 return;
             }
-            itemsOrdered[qtyOrdered] = disc;
+            itemsOrdered.add(media);
+            System.out.println("Product " + media.getTitle() + " added successfully");
             qtyOrdered += 1;
         }
     }
-    public void removeDigitalVideoDisc (DigitalVideoDisc disc){
+    public void removeMedia (Media media){
         for (int i = 0; i <= qtyOrdered-1; ++i) {
-            if (itemsOrdered[i] == disc) {
-                for (int j = i; j <= qtyOrdered-2; ++j) {
-                    itemsOrdered[j] = itemsOrdered[j+1];
-                }
+            if (Objects.equals(itemsOrdered.get(i), media)) {
+                itemsOrdered.remove(media);
+                System.out.println("Product " + media.getTitle() + " removed successfully");
                 qtyOrdered -= 1;
             }
         }
@@ -62,7 +68,8 @@ public class Cart {
     public float totalCost() {
         float sum = 0.0f;
         for (int i = 0; i <= qtyOrdered-1; ++i) {
-            sum += itemsOrdered[i].getCost();
+            Media tmp = itemsOrdered.get(i);
+            sum += tmp.getCost();
         }
         return sum;
     }
@@ -71,7 +78,7 @@ public class Cart {
         System.out.println("\n***********************CART***********************");
         System.out.println("Ordered Items:");
         for (int i = 0; i < this.qtyOrdered ; i++) {
-            System.out.println((i + 1) + ". " + this.itemsOrdered[i].toString());
+            System.out.println((i + 1) + ". " + this.itemsOrdered.get(i).toString());
         }
         System.out.println("Total cost: " + totalCost() + " $");
         System.out.println("**************************************************");
@@ -85,8 +92,8 @@ public class Cart {
         // Bui Quang Phuong 20235809
         boolean found = false;
         for (int i = 0; i < qtyOrdered; i++) {
-            if (id == itemsOrdered[i].getId()) {
-                System.out.println(this.itemsOrdered[i].toString());
+            if (id == itemsOrdered.get(i).getId()) {
+                System.out.println(this.itemsOrdered.get(i).toString());
                 System.out.println("------------------------------------------");
                 found = true;
             }
@@ -106,8 +113,8 @@ public class Cart {
         boolean found = false;
 
         for (int i = 0; i < qtyOrdered; i++) {
-            if (isMatch(itemsOrdered[i].getTitle(), userTitle)) {
-                System.out.println(this.itemsOrdered[i].toString());
+            if (isMatch(itemsOrdered.get(i).getTitle(), userTitle)) {
+                System.out.println(this.itemsOrdered.get(i).toString());
                 System.out.println("------------------------------------------");
                 found = true;
             }
@@ -118,8 +125,8 @@ public class Cart {
         }
     }
     // Bui Quang Phuong 20235809
-    public boolean isMatch(String dvdTitle, String inputTitle) {
-        return dvdTitle.contains(inputTitle);
+    public boolean isMatch(String mediaTitle, String inputTitle) {
+        return mediaTitle.contains(inputTitle);
     }
 
     public void searchCategory(String userCategory) {
@@ -131,8 +138,8 @@ public class Cart {
         boolean found = false;
 
         for (int i = 0; i < qtyOrdered; i++) {
-            if (isMatchCate(itemsOrdered[i].getCategory(), userCategory)) {
-                System.out.println(this.itemsOrdered[i].toString());
+            if (isMatchCate(itemsOrdered.get(i).getCategory(), userCategory)) {
+                System.out.println(this.itemsOrdered.get(i).toString());
                 System.out.println("------------------------------------------");
                 found = true;
             }
@@ -143,8 +150,8 @@ public class Cart {
         }
     }
     // Bui Quang Phuong 20235809
-    public boolean isMatchCate(String dvdCategory, String inputCategory) {
-        return dvdCategory.contains(inputCategory);
+    public boolean isMatchCate(String mediaCategory, String inputCategory) {
+        return mediaCategory.contains(inputCategory);
     }
 
 }

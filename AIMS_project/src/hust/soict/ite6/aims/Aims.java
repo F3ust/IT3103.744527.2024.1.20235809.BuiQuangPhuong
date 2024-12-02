@@ -1,7 +1,10 @@
 package hust.soict.ite6.aims;
 
 import hust.soict.ite6.aims.cart.Cart;
+import hust.soict.ite6.aims.media.Book;
+import hust.soict.ite6.aims.media.Media;
 import hust.soict.ite6.aims.media.disc.DigitalVideoDisc;
+import hust.soict.ite6.aims.media.disc.compactDisc.CompactDisc;
 
 public class Aims {
     public static void main(String[] args) {
@@ -10,24 +13,25 @@ public class Aims {
 
         // Create new dvd objects and add them to the cart
         DigitalVideoDisc dvd1 = new DigitalVideoDisc("The Lion King", "Animation", "Roger Allers", 87, 19.95f);
-        anOrder.addDigitalVideoDisc(dvd1);
+        anOrder.addMedia(dvd1);
 
-        DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars",
-                "Science Fiction", "George Lucas", 87, 24.95f);
-        anOrder.addDigitalVideoDisc(dvd2);
+        CompactDisc cd1 = new CompactDisc("Idol", "J-Pop", 10.99f, "Yoasobi");
+        anOrder.addMedia(cd1);
 
-        DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
-        anOrder.addDigitalVideoDisc(dvd3);
+        Book book1 = new Book("Re:Zero 1", "Light Novel", 8.99f);
+        anOrder.addMedia(book1);
+
+
         // Bui Quang Phuong 20235809
-        DigitalVideoDisc[] listDvd = new DigitalVideoDisc[3];
-        listDvd[0] = new DigitalVideoDisc("Persona", "Animation", "Atlus", 92, 20.67f);
-        listDvd[1] = new DigitalVideoDisc("86", "Animation", "b", 86, 16.86f);
-        listDvd[2] = new DigitalVideoDisc("Sword art online", "Animation", "a", 107, 21.56f);
-        anOrder.addDigitalVideoDisc(listDvd);
+        Media[] listMedia = new Media[3];
+        listMedia[0] = new DigitalVideoDisc("Persona", "Animation", "Atlus", 92, 20.67f);
+        listMedia[1] = new CompactDisc("Life is Dash", "J-Pop", 9.99f, "Suzumi Konomi");
+        listMedia[2] = new Book("Fate Strange Fake 1", "Light Novel", 3.99f);
+        anOrder.addMedia(listMedia);
 
         DigitalVideoDisc dvd4 = new DigitalVideoDisc("Metaphor", "Animation", 59.99f);
         DigitalVideoDisc dvd5 = new DigitalVideoDisc("Warhammer 40K", "Animation", 59.99f);
-        anOrder.addDigitalVideoDisc(dvd4, dvd5);
+        anOrder.addMedia(dvd4, dvd5);
 
         // print total cost of the items in the cart
         System.out.println("Total Cost is: ");
@@ -35,7 +39,7 @@ public class Aims {
         System.out.println("Total items: " + anOrder.getQtyOrdered());
 
         // remove dvd2
-        anOrder.removeDigitalVideoDisc(dvd2);
+        anOrder.removeMedia(dvd5);
         // print total cost of the items in the cart
         System.out.println("Total Cost is: ");
         System.out.println(anOrder.totalCost() + "$");
