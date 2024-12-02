@@ -15,8 +15,8 @@ public class StoreTest {
 
 //        Bui Quang Phuong 20235809
 
-        store.addDigitalVideoDisc(dvd1);
-        store.removeDigitalVideoDisc(dvd1);
+        store.addMedia(dvd1);
+        store.removeMedia(dvd1);
         System.out.println("Bui Quang Phuong 20235809");
     }
 }
