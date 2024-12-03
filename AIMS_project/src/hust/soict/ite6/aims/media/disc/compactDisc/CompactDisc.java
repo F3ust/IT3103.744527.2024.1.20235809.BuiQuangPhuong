@@ -21,6 +21,11 @@ public class CompactDisc extends Disc {
         this.artist = artist;
     }
 
+    public CompactDisc(String title, String category, float cost, String artist, int length, String director) {
+        super(title, category, director, length, cost);
+        this.artist = artist;
+    }
+
     public void addTrack(Track track) {
         for (Track i : tracks) {
             if (Objects.equals(i, track)) {
@@ -42,5 +47,13 @@ public class CompactDisc extends Disc {
             }
         }
         System.out.println("Track not exist");
+    }
+
+    public void play() {
+        System.out.println("Information of Compact Disc : \n");
+        for (Track track : tracks) {
+            track.play();
+        }
+
     }
 }

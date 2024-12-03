@@ -28,4 +28,9 @@ public class Track {
     public Track() {
 
     }
+
+    public void play() {
+        System.out.println("Playing DVD: " + this.getTitle());
+        System.out.println("DVD length: " + this.getLength());
+    }
 }
