@@ -37,5 +37,26 @@ public class Store {
             }
         }
     }
+    public void showStore() {
+        System.out.println("\n***********************STORE***********************");
+        System.out.println("Ordered Items:");
+        for (int i = 0; i < currentItemsNumber ; i++) {
+            System.out.println((i + 1) + ". " + this.itemsAvailable.get(i).toString());
+        }
+        System.out.println("**************************************************");
+    }
+
+    public Media findMediaByTitle(String titleToPlay) {
+        for (int i = 0; i < currentItemsNumber; i++) {
+            if (isMatch(itemsAvailable.get(i).getTitle(), titleToPlay)) {
+                return itemsAvailable.get(i);
+            }
+        }
+        return null;
+    }
+
+    public boolean isMatch(String mediaTitle, String inputTitle) {
+        return mediaTitle.contains(inputTitle);
+    }
 
 }

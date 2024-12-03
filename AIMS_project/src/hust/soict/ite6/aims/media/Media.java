@@ -2,7 +2,9 @@ package hust.soict.ite6.aims.media;
 
 // Bui Quang Phuong 20235809
 
-public class Media {
+import java.util.Comparator;
+
+public abstract class Media {
     private int id;
     private String title;
     private String category;
@@ -73,4 +75,26 @@ public class Media {
     public String toString() {
         return "Media - " + getId()+" - "+ getTitle() + " - " + getCategory()  + ": " + getCost() + " $";
     }
+
+    public static final Comparator<Media> COMPARE_BY_TITLE_COST = new Comparator<Media>() {
+        @Override
+        public int compare(Media media1, Media media2) {
+            int titleComparison = media1.getTitle().compareTo(media2.getTitle());
+            if (titleComparison != 0) {
+                return titleComparison;
+            }
+            return Float.compare(media1.getCost(), media2.getCost());
+        }
+    };
+
+    public static final Comparator<Media> COMPARE_BY_COST_TITLE = new Comparator<Media>() {
+        @Override
+        public int compare(Media media1, Media media2) {
+            int costComparison = Float.compare(media1.getCost(), media2.getCost());
+            if (costComparison != 0) {
+                return costComparison;
+            }
+            return media1.getTitle().compareTo(media2.getTitle());
+        }
+    };
 }

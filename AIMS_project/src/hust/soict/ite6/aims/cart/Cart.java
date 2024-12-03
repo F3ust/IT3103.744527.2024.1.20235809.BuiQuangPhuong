@@ -3,7 +3,11 @@ package hust.soict.ite6.aims.cart;
 import hust.soict.ite6.aims.media.Media;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Objects;
+
+import static hust.soict.ite6.aims.media.Media.COMPARE_BY_COST_TITLE;
+import static hust.soict.ite6.aims.media.Media.COMPARE_BY_TITLE_COST;
 
 //Bui Quang Phuong 20235809
 public class Cart {
@@ -124,6 +128,16 @@ public class Cart {
             System.out.println("No matching titles found for \"" + userTitle + "\".");
         }
     }
+
+    public Media searchByTitle(String titleToPlay) {
+        boolean found = false;
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (isMatch(itemsOrdered.get(i).getTitle(), titleToPlay)) {
+                return itemsOrdered.get(i);
+            }
+        }
+        return null;
+    }
     // Bui Quang Phuong 20235809
     public boolean isMatch(String mediaTitle, String inputTitle) {
         return mediaTitle.contains(inputTitle);
@@ -152,6 +166,27 @@ public class Cart {
     // Bui Quang Phuong 20235809
     public boolean isMatchCate(String mediaCategory, String inputCategory) {
         return mediaCategory.contains(inputCategory);
+    }
+
+    public Media searchID(int userID) {
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (Objects.equals(itemsOrdered.get(i).getId(), userID)) {
+                return itemsOrdered.get(i);
+            }
+        }
+        return null;
+    }
+
+    public void emptyCart() {
+        itemsOrdered.clear();
+    }
+
+    public void sortCartByTitleAndCost() {
+        itemsOrdered.sort(COMPARE_BY_TITLE_COST);
+    }
+
+    public void sortCartByCostAndTitle() {
+        itemsOrdered.sort(COMPARE_BY_COST_TITLE);
     }
 
 }
