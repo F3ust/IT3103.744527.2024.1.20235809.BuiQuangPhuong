@@ -49,6 +49,7 @@ public class Store {
     public Media findMediaByTitle(String titleToPlay) {
         for (int i = 0; i < currentItemsNumber; i++) {
             if (isMatch(itemsAvailable.get(i).getTitle(), titleToPlay)) {
+                System.out.println(itemsAvailable.get(i).toString());
                 return itemsAvailable.get(i);
             }
         }

@@ -1,5 +1,6 @@
 package hust.soict.ite6.aims.media.disc.compactDisc;
 
+import hust.soict.ite6.aims.media.Playable;
 import hust.soict.ite6.aims.media.disc.Disc;
 
 import java.util.ArrayList;
@@ -8,7 +9,7 @@ import java.util.Objects;
 
 // Bui Quang Phuong 20235809
 
-public class CompactDisc extends Disc {
+public class CompactDisc extends Disc implements Playable {
     private String artist;
     private List<Track> tracks = new ArrayList<Track>();
 
@@ -49,6 +50,7 @@ public class CompactDisc extends Disc {
         System.out.println("Track not exist");
     }
 
+    @Override
     public void play() {
         System.out.println("Information of Compact Disc : \n");
         for (Track track : tracks) {

@@ -1,7 +1,7 @@
 package hust.soict.ite6.aims.media;
 
 import java.util.Comparator;
-
+//Bui Quang Phuong 20235809
 public class MediaComparatorByCostTitle implements Comparator<Media> {
     @Override
     public int compare(Media m1, Media m2) {

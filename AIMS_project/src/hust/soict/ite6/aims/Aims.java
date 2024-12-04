@@ -10,6 +10,7 @@ import hust.soict.ite6.aims.store.Store;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Aims {
@@ -93,7 +94,6 @@ public class Aims {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        List<Media> media = new ArrayList<Media>();
         Store store = new Store();
         Cart cart = new Cart();
 
@@ -118,6 +118,19 @@ public class Aims {
         Book book3 = new Book("To Kill a Mockingbird", "Classic", 7.99f);
         Book book4 = new Book("The Hobbit", "Fantasy", 10.49f);
         Book book5 = new Book("The Catcher in the Rye", "Classic", 6.99f);
+
+        // test toString
+        // Bui Quang Phuong 20235809
+        List<Media> media = new ArrayList<Media>();
+        media.add(cd2);
+        media.add(dvd1);
+        media.add(book3);
+        for(Media m : media) {
+            System.out.println(m.toString());
+        }
+
+
+        // Add to store
 
         store.addMedia(cd1);
         store.addMedia(cd2);
@@ -166,7 +179,6 @@ public class Aims {
                                         case 1:
                                             System.out.println("Enter the title of media: ");
                                             cart.addMedia(mediaByTitle);
-                                            System.out.println("Added " + mediaByTitle.getTitle() + " to cart successfully");
                                             break;
                                         case 2:
                                             System.out.println("Playing " + mediaByTitle.getTitle());
@@ -186,7 +198,6 @@ public class Aims {
                                 mediaByTitle = store.findMediaByTitle(userTitle);
                                 if(mediaByTitle != null){
                                     cart.addMedia(mediaByTitle);
-                                    System.out.println("Added " + mediaByTitle.getTitle() + " to cart successfully");
                                 }else{
                                     System.out.println("Title does not exist");
                                 }
@@ -365,9 +376,9 @@ public class Aims {
                     switch (filterCartMenu){
                         case 1:
                             int id;
-                            System.out.println("Entered the id");
+                            System.out.println("Enter the id");
                             id = scanner.nextInt();
-                            cart.searchID(id);
+                            cart.searchId(id);
                             break;
                         case 2:
                             String title;
@@ -430,11 +441,11 @@ public class Aims {
                         System.out.println("The selected media is not playable.");
                     }
                 } else {
-                    System.out.println("Media not found in the store.");
+                    System.out.println("Media not found in the cart.");
                 }
                 break;
             case 5:
-                System.out.println("Placed order");
+                System.out.println("Order placed");
                 cart.emptyCart();
                 break;
             case 0:

@@ -96,7 +96,7 @@ public class Cart {
         // Bui Quang Phuong 20235809
         boolean found = false;
         for (int i = 0; i < qtyOrdered; i++) {
-            if (id == itemsOrdered.get(i).getId()) {
+            if (Objects.equals(id, itemsOrdered.get(i).getId())) {
                 System.out.println(this.itemsOrdered.get(i).toString());
                 System.out.println("------------------------------------------");
                 found = true;
@@ -168,7 +168,7 @@ public class Cart {
         return mediaCategory.contains(inputCategory);
     }
 
-    public Media searchID(int userID) {
+    public Media searchbyID(int userID) {
         for (int i = 0; i < qtyOrdered; i++) {
             if (Objects.equals(itemsOrdered.get(i).getId(), userID)) {
                 return itemsOrdered.get(i);
@@ -178,6 +178,7 @@ public class Cart {
     }
 
     public void emptyCart() {
+        qtyOrdered = 0;
         itemsOrdered.clear();
     }
 

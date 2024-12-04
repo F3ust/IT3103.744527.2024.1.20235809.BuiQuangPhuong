@@ -1,6 +1,9 @@
 package hust.soict.ite6.aims.media.disc.compactDisc;
+
+import hust.soict.ite6.aims.media.Playable;
+
 // Bui Quang Phuong 20235809
-public class Track {
+public class Track implements Playable {
     private String title;
     private float length;
 
@@ -28,9 +31,17 @@ public class Track {
     public Track() {
 
     }
-
+    @Override
     public void play() {
         System.out.println("Playing DVD: " + this.getTitle());
         System.out.println("DVD length: " + this.getLength());
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Track track = (Track) obj;
+        return title.equals(track.title) && length == track.getLength();
     }
 }
