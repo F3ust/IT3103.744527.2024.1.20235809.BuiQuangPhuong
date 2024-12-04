@@ -2,7 +2,7 @@ package hust.soict.ite6.aims.media;
 
 // Bui Quang Phuong 20235809
 
-public class Media {
+public abstract class Media {
     private int id;
     private String title;
     private String category;
