@@ -167,7 +167,6 @@ public class Aims {
                             case 1:
                                 System.out.println("Enter the title of media: ");
                                 scanner.nextLine();
-
                                 userTitle = scanner.nextLine();
                                 mediaByTitle = store.findMediaByTitle(userTitle);
                                 if (mediaByTitle != null) {
