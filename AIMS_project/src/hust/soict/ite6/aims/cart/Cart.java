@@ -5,6 +5,8 @@ import hust.soict.ite6.aims.media.Media;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Objects;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import static hust.soict.ite6.aims.media.Media.COMPARE_BY_COST_TITLE;
 import static hust.soict.ite6.aims.media.Media.COMPARE_BY_TITLE_COST;
@@ -12,8 +14,12 @@ import static hust.soict.ite6.aims.media.Media.COMPARE_BY_TITLE_COST;
 //Bui Quang Phuong 20235809
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
-    private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
-    private int qtyOrdered;
+    private static ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
+    private static int qtyOrdered;
+
+    public static ObservableList<Media> getItemsOrdered() {
+        return itemsOrdered;
+    }
 
     public void setQtyOrdered(int qtyOrdered) {
         this.qtyOrdered = qtyOrdered;
@@ -23,7 +29,7 @@ public class Cart {
         return qtyOrdered;
     }
 
-    public void addMedia (Media media){
+    public static void addMedia (Media media){
         if (qtyOrdered > MAX_NUMBERS_ORDERED) {
             System.out.println("MAX NUMBERS ORDERED REACHED");
             return;
@@ -32,7 +38,7 @@ public class Cart {
         System.out.println("Product " + media.getTitle() + " added successfully");
         qtyOrdered += 1;
     }
-    public void addMedia(Media media1, Media media2) { // Bui Quang Phuong 20235809
+    public static void addMedia(Media media1, Media media2) { // Bui Quang Phuong 20235809
         if (qtyOrdered > MAX_NUMBERS_ORDERED) {
             System.out.println("MAX NUMBERS ORDERED REACHED");
             return;
@@ -48,7 +54,7 @@ public class Cart {
         System.out.println("Product " + media2.getTitle() + " added successfully");
         qtyOrdered += 1;
     }
-    public void addMedia(Media[] mediaList) { // Bui Quang Phuong 20235809
+    public static void addMedia(Media[] mediaList) { // Bui Quang Phuong 20235809
         for (Media media : mediaList) {
             // Assuming hust.soict.ite6.aims.cart.Cart class handles this method to add DVDs
             if (qtyOrdered > MAX_NUMBERS_ORDERED) {

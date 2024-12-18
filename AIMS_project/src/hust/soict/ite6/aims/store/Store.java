@@ -11,6 +11,10 @@ public class Store {
     public static final int MAX_ITEMS_NUMBERED = 100;
     private final ArrayList<Media> itemsAvailable = new ArrayList<Media>();
 
+    public ArrayList<Media> getItemsAvailable() {
+        return itemsAvailable;
+    }
+
     //Bui Quang Phuong 20235809
     public void addMedia(Media media) {
         System.out.println();

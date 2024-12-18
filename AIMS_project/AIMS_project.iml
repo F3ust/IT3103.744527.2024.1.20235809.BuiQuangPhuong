@@ -7,5 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bio.singa.javafx" level="project" />
+    <orderEntry type="library" name="canoo.dolphin.platform.client.javafx" level="project" />
+    <orderEntry type="library" name="cedarsoft.commons.javafx" level="project" />
+    <orderEntry type="library" name="github.adedayo.intellij.sdk.javaFX.jps.plugin" level="project" />
   </component>
 </module>

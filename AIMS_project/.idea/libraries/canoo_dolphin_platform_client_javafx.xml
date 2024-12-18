@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="canoo.dolphin.platform.client.javafx" type="repository">
+    <properties maven-id="com.canoo.dolphin-platform:dolphin-platform-client-javafx:1.0.0.CR5" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/canoo/dolphin-platform/dolphin-platform-client-javafx/1.0.0.CR5/dolphin-platform-client-javafx-1.0.0.CR5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/canoo/dolphin-platform/dolphin-platform-client/1.0.0.CR5/dolphin-platform-client-1.0.0.CR5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/canoo/dolphin-platform/dolphin-platform-core/1.0.0.CR5/dolphin-platform-core-1.0.0.CR5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
