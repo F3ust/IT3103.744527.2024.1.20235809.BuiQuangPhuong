@@ -85,7 +85,15 @@ public abstract class Media {
         Media media = (Media) obj;
         return title.equals(media.title);
     }
-    //Bui Quang Phuong 20235809
+    public boolean isMatch(String title) {
+        String[] keywords = title.split("\\s+");
+        for (String word : keywords) {
+            if (this.title.toLowerCase().contains(word.toLowerCase()))
+                return true;
+        }
+        return false;
+    }
+        //Bui Quang Phuong 20235809
     public static final Comparator<Media> COMPARE_BY_TITLE_COST = new Comparator<Media>() {
         @Override
         public int compare(Media media1, Media media2) {
